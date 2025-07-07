@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+     <!--favicon-->
+     <link rel="icon" type="image/x-icon" href="emotest.jpg">
+    <title>Emotion Test</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Emotion Test</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="help.html">Help</a>
+            <a href="test.html">Emotion Test</a>
+            <a href="komen.html">Coment</a>
+        </nav>
+    </div>
+    <div class="quiz-container">
+        <button id="letsGoButton" class="start-button">Let's Go!</button>
+        
+            <div class="slide">
+                <h2>Bagaimana perasaan Anda saat bangun pagi ini?</h2>
+                <button data-points="2">a) Bersemangat </button>
+                <button data-points="1">b) Lelah </button>
+            </div>
+            <div class="slide">
+                <h2>Bagaimana reaksi Anda ketika menerima kabar baik?</h2>
+                <button data-points="2">a) Sangat senang </button>
+                <button data-points="1">c) Tidak terlalu peduli </button>
+            </div>
+            <div class="slide">
+                <h2>Bagaimana perasaan Anda tentang pekerjaan/hari Anda hari ini?</h2>
+                <button data-points="2">a) Puas dan produktif </button>
+                <button data-points="1">b) Frustrasi </button>
+            </div>
+            <div class="slide">
+                <h2>Bagaimana suasana hati Anda saat ini?</h2>
+                <button data-points="2">a) Bahagia </button>
+                <button data-points="1">b) Sedih </button>
+            </div>
+            <div class="slide">
+                <h2>Ketika memikirkan masa depan, apa yang Anda rasakan?</h2>
+                <button data-points="2">a) Optimis</button>
+                <button data-points="1">b) Pesimis </button>
+            </div>
+            <div class="slide">
+                <h2>Bagaimana reaksi Anda terhadap cuaca hari ini?</h2>
+                <button data-points="2">a) Menikmati </button>
+                <button data-points="1">b) Terganggu </button>
+            </div>
+            <div class="slide">
+                <h2>Ketika seseorang memberi Anda pujian, bagaimana perasaan Anda?</h2>
+                <button data-points="2">a) Senang dan bangga </button>
+                <button data-points="1">b) Tidak nyaman </button>
+            </div>
+            <div class="slide">
+                <h2>Bagaimana perasaan Anda setelah berinteraksi dengan teman dekat?</h2>
+                <button data-points="2">a) Bahagia dan puas </button>
+                <button data-points="1">b) Lelah atau tertekan </button>
+            </div>
+            <div class="slide">
+                <h2>Bagaimana Anda menilai hari Anda sejauh ini?</h2>
+                <button data-points="2">a) Luar biasa </button>
+                <button data-points="1">b) Buruk </button>
+            </div>
+            <div class="slide">
+                <h2>Bagaimana perasaan Anda tentang diri Anda sendiri saat ini?</h2>
+                <button data-points="2">a) Percaya diri dan positif </button>
+                <button data-points="1">b) Merasa tidak berharga</button>
+            </div>
+  
+            <div class="slide result">
+                <h2>Hasil Kuis Anda:</h2>
+                <p id="result"></p>
+                <h3>Rekomendasi Makanan:</h3>
+                <div id="foodRecommendations"></div>
+            </div>
+        </div>
+        <script src="scriptss.js"></script>
+    </body>
+    </html>
