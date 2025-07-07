@@ -1,0 +1,221 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* General styling */
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #398fc4;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header .test {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #337ab7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #b2dfdb;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.star-widget {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.star-widget input {
+  display: none;
+}
+
+.star-widget label {
+  font-size: 30px;
+  color: #444;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.star-widget label:hover,
+.star-widget label:hover ~ label {
+  color: #fd4;
+}
+
+input:checked ~ label {
+  color: rgb(211, 238, 9);
+}
+
+#rate-1:checked ~ form header:before {
+  content: "I Just Hate It 😈";
+}
+
+#rate-2:checked ~ form header:before {
+  content: "I Dont Like It 😒";
+}
+
+#rate-3:checked ~ form header:before {
+  content: "It Is Awesome 🙂";
+}
+
+#rate-4:checked ~ form header:before {
+  content: "I Just Like It 😎";
+}
+
+#rate-5:checked ~ form header:before {
+  content: "I Just Love It 🤩";
+}
+
+form header {
+  font-size: 20px;
+  color: rgb(46, 162, 230);
+  font-weight: 500;
+  margin: 10px 0 20px;
+  transition: all 0.2s ease;
+}
+
+form .textarea {
+  margin-bottom: 20px;
+}
+
+form .textarea textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+form .btn button {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #999;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .btn button:hover {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.comments {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comments h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.comments li:last-child {
+  border-bottom: none;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .star-widget label {
+    font-size: 24px;
+  }
+
+  form .btn button {
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header .test {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+    margin: 0 5px;
+  }
+
+  .star-widget label {
+    font-size: 20px;
+  }
+
+  form .btn button {
+    height: 32px;
+    font-size: 12px;
+  }
+}
